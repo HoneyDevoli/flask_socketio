@@ -21,7 +21,7 @@
                   transports: ['websocket']
                 });
                 socket.on('connect', function () {
-                    socket.emit('my_event', {hui: 'hui'});
+                    socket.emit('my_event', {data: 'test'});
                 });
 
                 socket.on('my_response', function(msg, cb) {
@@ -63,7 +63,7 @@
               <div id="log"></div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary hui" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
